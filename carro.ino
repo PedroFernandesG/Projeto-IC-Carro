@@ -1,27 +1,3 @@
-/*
-bool esquerda = true;
-bool achouLinha = false;
-unsigned int comeco = 0;
-const int delayFora = 180;
-
-// O CÓDIGO QUE DEU CERTO!!!!
-void algorithm(){
-  setVelocity(0, 75);
-  setVelocity(1, 80);
-  achouLinha = false;
-  esquerda = !esquerda;
-
-  while (stayOnBlackLine() || !achouLinha || ((millis() - comeco) < delayFora)) {
-    if (esquerda) turnLeft();
-    else turnRight();
-    if (stayOnBlackLine()) {
-      achouLinha = true;
-      comeco = millis();
-    }
-    delay(10);
-  }
-}*/
-
 bool onLine = false;
 bool left = true;
 const int delay = 180;
