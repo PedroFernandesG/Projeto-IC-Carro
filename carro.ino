@@ -1,7 +1,7 @@
 bool onLine = false;
 bool left = true;
-const int delay = 180;
-const int delay2 = 10;
+const int Delay = 180;
+const int DelayT = 10;
 unsigned int start = 0;
 
 void algorithm(){
@@ -11,7 +11,7 @@ void algorithm(){
   onLine = false;
   left = !left;
 
-  while (((millis() - start) < delay) || stayOnBlackLine() || !onLine ) {
+  while (((millis() - start) < Delay) || stayOnBlackLine() || !onLine ) {
     if(left){
      turnLeft();
     }
@@ -22,6 +22,6 @@ void algorithm(){
       onLine = true;
       start = millis();
     }
-    delay(delay2);
+    delay(DelayT);
   }
 }
